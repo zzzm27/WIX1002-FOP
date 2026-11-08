@@ -8,7 +8,7 @@
  * @author zhenming
  */
 //import java.util.Scanner;
-//public class Qustion4 {
+//public class Question4 {
 //    public static void main(String[] args){
 //      Scanner input = new Scanner(System.in);
 //        System.out.println("Enter Num1: ");
