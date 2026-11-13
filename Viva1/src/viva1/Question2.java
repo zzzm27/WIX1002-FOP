@@ -64,9 +64,6 @@ public class Question2 {
             }
 
             balance += D;
-            interest = balance * R_month;
-            totalInterest += interest;
-            balance += interest;
 
             if (i == M) {
                 if (WD_status == 'Y') {
@@ -85,6 +82,13 @@ public class Question2 {
                     }
                 }
             }
+            
+            
+            interest = balance * R_month;
+            totalInterest += interest;
+            balance += interest;
+            
+            
             if (goal) {
                 if (balance >= G) {
                     System.out.println("Saving goal reached in Month " + i + "!");
@@ -92,6 +96,7 @@ public class Question2 {
                 }
             }
 
+            
             if (i == 12) {
                 System.out.printf("End of Year 1 Balance: RM %.2f (rate %.1f", balance, currentRate);
                 System.out.println("%)");
@@ -106,6 +111,6 @@ public class Question2 {
             }
         }
         System.out.printf("Total Deposits: RM %.2f%n", totalDeposit);
-        System.out.printf("Total Interest Earned: RM%.2f", totalInterest);
+        System.out.printf("Total Interest Earned: RM%.2f%n", totalInterest);
     }
 }
